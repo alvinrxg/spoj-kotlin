@@ -6,6 +6,8 @@ import java.io.InputStreamReader
 import java.math.BigDecimal
 
 fun main(args: Array<String>) {
+    fun BigDecimal.printOut() = println(this)
+
     val reader = BufferedReader(InputStreamReader(System.`in`))
     reader.readLines().drop(1)
             .forEach {
@@ -14,5 +16,3 @@ fun main(args: Array<String>) {
                 }.printOut()
             }
 }
-
-fun BigDecimal.printOut() = println(this)
